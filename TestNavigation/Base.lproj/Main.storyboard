@@ -17,14 +17,86 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-gc-H0T">
+                                <rect key="frame" x="152" y="318.5" width="71" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go to vc 3"/>
+                                <connections>
+                                    <action selector="actionNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRg-so-XSy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ArD-gc-H0T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4rT-uV-8Mm"/>
+                            <constraint firstItem="ArD-gc-H0T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n3c-Tg-NtQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="2eo-R9-Wvb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="118.29085457271366"/>
+            <point key="canvasLocation" x="855" y="118"/>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="Z2V-7l-Ve3">
+            <objects>
+                <viewController storyboardIdentifier="VC2" id="UU5-Cd-Ack" customClass="VC2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j78-hI-MhU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5t-Ns-c1A">
+                                <rect key="frame" x="135" y="318.5" width="105" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go back to vc 1"/>
+                                <connections>
+                                    <action selector="actionNavigation:" destination="UU5-Cd-Ack" eventType="touchUpInside" id="PaI-2r-aEb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e5t-Ns-c1A" firstAttribute="centerY" secondItem="j78-hI-MhU" secondAttribute="centerY" id="2ap-kI-5or"/>
+                            <constraint firstItem="e5t-Ns-c1A" firstAttribute="centerX" secondItem="j78-hI-MhU" secondAttribute="centerX" id="iQB-zG-K1N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BmM-Pb-VzH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gor-kb-b8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="118"/>
+        </scene>
+        <!--VC3-->
+        <scene sceneID="cje-v6-rTM">
+            <objects>
+                <viewController storyboardIdentifier="VC3" id="Ytg-00-aVU" customClass="VC3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bJ4-8a-ZBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSB-A0-Wgb">
+                                <rect key="frame" x="105" y="318.5" width="165" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go to vc2 but by poping"/>
+                                <connections>
+                                    <action selector="actionNavigation:" destination="Ytg-00-aVU" eventType="touchUpInside" id="9bR-RI-xV1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WSB-A0-Wgb" firstAttribute="centerY" secondItem="bJ4-8a-ZBa" secondAttribute="centerY" id="0sw-NM-1R0"/>
+                            <constraint firstItem="WSB-A0-Wgb" firstAttribute="centerX" secondItem="bJ4-8a-ZBa" secondAttribute="centerX" id="N0f-uk-W2e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gzn-iX-VaQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2C-yB-rel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2178" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v8x-97-95D">
@@ -41,7 +113,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhX-1O-52f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="777.66116941529242"/>
+            <point key="canvasLocation" x="129" y="118"/>
         </scene>
     </scenes>
 </document>

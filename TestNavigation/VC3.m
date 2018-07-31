@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -25,17 +25,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    VC2 *vc = [[VC2 alloc] init];
-
+- (IBAction)actionNavigation:(id)sender {
+    VC2 *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"VC2"];
     NSMutableArray *vcArray = [NSMutableArray arrayWithArray:self.navigationController.viewControllers] ;
     [vcArray insertObject:vc atIndex:1]; // ** This index is `1` assuming you only have 2 controllers and we are pushing it in the middle,
     // if you have many vc in navigation stack and just want to insert a new vc just before your current vc go with this:
     /*
      [vcArray insertObject:temp1 atIndex:vcArray.count - 2];
      */
-    
     self.navigationController.viewControllers = vcArray;
+    
+    
+    /* --- ** You can also ommit for loop part and directly use:
+              [self.navigationController popViewControllerAnimated:true];
+    */
     
     for (UIViewController *controller in  self.navigationController.viewControllers) {
         
@@ -43,8 +46,8 @@
             [self.navigationController popToViewController: controller animated:YES];
         }
     }
-    
 }
+
 
 /*
 #pragma mark - Navigation

@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,9 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    VC3 *vc = [[VC3 alloc] init];
+- (IBAction)actionNavigation:(id)sender {
+    VC3 *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"VC3"];
     [self.navigationController pushViewController:vc animated:true];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+   
 }
 
 
