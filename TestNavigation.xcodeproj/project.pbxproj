@@ -15,6 +15,8 @@
 		84379B182110453500CCD352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84379B172110453500CCD352 /* main.m */; };
 		84379B222110453500CCD352 /* TestNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84379B212110453500CCD352 /* TestNavigationTests.m */; };
 		84379B2D2110453500CCD352 /* TestNavigationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84379B2C2110453500CCD352 /* TestNavigationUITests.m */; };
+		84379B3C2110454C00CCD352 /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84379B3B2110454C00CCD352 /* VC2.m */; };
+		84379B3F2110456F00CCD352 /* VC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 84379B3E2110456F00CCD352 /* VC3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		84379B282110453500CCD352 /* TestNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84379B2C2110453500CCD352 /* TestNavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavigationUITests.m; sourceTree = "<group>"; };
 		84379B2E2110453500CCD352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84379B3A2110454C00CCD352 /* VC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
+		84379B3B2110454C00CCD352 /* VC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
+		84379B3D2110456F00CCD352 /* VC3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC3.h; sourceTree = "<group>"; };
+		84379B3E2110456F00CCD352 /* VC3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VC3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				84379B132110453500CCD352 /* LaunchScreen.storyboard */,
 				84379B162110453500CCD352 /* Info.plist */,
 				84379B172110453500CCD352 /* main.m */,
+				84379B3A2110454C00CCD352 /* VC2.h */,
+				84379B3B2110454C00CCD352 /* VC2.m */,
+				84379B3D2110456F00CCD352 /* VC3.h */,
+				84379B3E2110456F00CCD352 /* VC3.m */,
 			);
 			path = TestNavigation;
 			sourceTree = "<group>";
@@ -263,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84379B0D2110452D00CCD352 /* ViewController.m in Sources */,
+				84379B3F2110456F00CCD352 /* VC3.m in Sources */,
 				84379B182110453500CCD352 /* main.m in Sources */,
 				84379B0A2110452D00CCD352 /* AppDelegate.m in Sources */,
+				84379B3C2110454C00CCD352 /* VC2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
